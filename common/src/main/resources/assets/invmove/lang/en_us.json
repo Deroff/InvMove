@@ -11,6 +11,10 @@
 
   "config.invmove.movement.enable": "Move In Inventories",
   "tooltip.config.invmove.movement.enable": "Enable movement while inside inventories.\nYou can manually turn off certain inventories below.\nThere is a keybind you can set to toggle this.",
+  "config.invmove.movement.firstPerson": "Move In First Person",
+  "tooltip.config.invmove.movement.firstPerson": "Allow movement in inventories in first person.",
+  "config.invmove.movement.thirdPerson": "Move In Third Person",
+  "tooltip.config.invmove.movement.thirdPerson": "Allow movement in inventories in third person (F5).",
   "config.invmove.movement.sneak": "Sneak Mode",
   "tooltip.config.invmove.movement.sneak": "How to handle sneaking while inside inventories:\nOff = No sneaking\nMaintain = Keep sneaking if you were when the inventory opened\nPressed = Sneak only while holding the sneak button\nMaintainWhilePressed = Maintain until the sneak button is released\n(Pressed can be distracting when shift-clicking)\n(If using toggle sneak, Pressed allows toggling and both other modes maintain)",
   "config.invmove.movement.sneak_disallowed": "Sneak Mode When Disallowed",
