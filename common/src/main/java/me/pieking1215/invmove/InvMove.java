@@ -454,6 +454,9 @@ public abstract class InvMove {
 
         if(!InvMoveConfig.GENERAL.ENABLED.get()) return false;
         if(!InvMoveConfig.MOVEMENT.ENABLED.get()) return false;
+        boolean firstPerson = Minecraft.getInstance().options.getCameraType().isFirstPerson();
+        if(firstPerson && !InvMoveConfig.MOVEMENT.FIRST_PERSON.get()) return false;
+        if(!firstPerson && !InvMoveConfig.MOVEMENT.THIRD_PERSON.get()) return false;
 
         // checking this way instead of screen.isPauseScreen() makes it work with ItemSwapper
         // (their overlay uses a mixin instead of overriding isPauseScreen)
