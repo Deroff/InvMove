@@ -49,6 +49,10 @@ public class InvMoveConfig {
         public final ModuleConfig cfg = new ModuleConfig("movement");
 
         public final ConfigBool ENABLED = cfg.bool("enable", true);
+        public final ConfigBool FIRST_PERSON = cfg.bool("firstPerson", true).textFn(MOVEMENT_YES_NO_TEXT);
+        public final ConfigBool THIRD_PERSON = cfg.bool("thirdPerson", true).textFn(MOVEMENT_YES_NO_TEXT);
+
+        
 
         @Deprecated
         public final ConfigBool JUMP = cfg.bool("jump", true).hide();
